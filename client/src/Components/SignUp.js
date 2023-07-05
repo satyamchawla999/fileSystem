@@ -21,9 +21,9 @@ const SignUp = () => {
         }
 
         try {
-            const response = await axios.post("http://localhost:8000/addUser", {name:name, email: email, password: password });
+            const response = await axios.post("http://localhost:8000/users/sign-up", {name:name, email: email, password: password });
 
-            if (response.status === 200)
+            if (response.status === 201)
                 Navigate("/");
             else
                 alert("User Is Already Present");

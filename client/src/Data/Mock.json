@@ -1,0 +1,47 @@
+{
+    "weather":[
+        {
+            "day":"MON",
+            "type":"Partly Cloudy",
+            "temprature":"21.0",
+            "wind":"6.1",
+            "precip":"0.0",
+            "pressure":"1025.0"
+        },{
+            "day":"TUE",
+            "type":"Sunny",
+            "temprature":"23.3",
+            "wind":"6.1",
+            "precip":"0.0",
+            "pressure":"1025.0"
+        },{
+            "day":"WED",
+            "type":"Rainy",
+            "temprature":"27.8",
+            "wind":"6.1",
+            "precip":"0.0",
+            "pressure":"1025.0"
+        },{
+            "day":"THU",
+            "type":"Thunder Strome",
+            "temprature":"31.3",
+            "wind":"6.1",
+            "precip":"0.0",
+            "pressure":"1025.0"
+        },{
+            "day":"FRI",
+            "type":"Cloudy",
+            "temprature":"17.0",
+            "wind":"6.1",
+            "precip":"0.0",
+            "pressure":"1025.0"
+        },{
+            "day":"SAT",
+            "type":"Partly Cloudy",
+            "temprature":"21.0",
+            "wind":"6.1",
+            "precip":"0.0",
+            "pressure":"1025.0"
+        }
+    ]
+}

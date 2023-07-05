@@ -25,10 +25,9 @@ const SignIn = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:8000/checkUser", { email: email, password: password });
+      const response = await axios.post("http://localhost:8000/users/sign-in", { email: email, password: password });
 
-      if (response.status === 200) {
-        dispatch(setUserData(response.data));
+      if (response.status === 201) {
         Navigate("/home");
       }
         

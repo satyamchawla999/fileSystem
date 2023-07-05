@@ -1,3 +1,4 @@
+let User = require("../Model/users")
 const path = require("path");
 const fs = require("fs");
 
@@ -67,5 +68,41 @@ module.exports.addUser = (req, res) => {
     catch {
         res.statusMessage = "User Not Found";
         return res.status(204).end();
+    }
+}
+
+module.exports.signUp = async (req,res) => {
+    try {
+        let user =  await User.findOne({email: req.body.email});
+
+        if(!user){
+            user = await User.create(req.body);
+            return res.status(201).send("User Created Successfully!");
+        } else {
+            res.statusMessage = "User Already Exists";
+            return res.status(204).end()
+        }
+
+    } catch(err) {
+        res.statusMessage = "Unable To Create User";
+        return res.status(409).end();
+    }
+}
+
+module.exports.signIn = async (req,res) => {
+    const {email,password} = req.body;
+    try {
+        let user =  await User.findOne({email: email});
+
+        if(user && user.password === password){
+            return res.status(201).send("Sign In Successfull!");
+        } else {
+            res.statusMessage = "User Not Present";
+            return res.status(204).end()
+        }
+
+    } catch(err) {
+        res.statusMessage = "Unable To Sign In";
+        return res.status(401).end();
     }
 }

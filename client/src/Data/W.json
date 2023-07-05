@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 103.8467,
+        "lat": 1.3603
+    },
+    "weather": [
+        {
+            "id": 802,
+            "main": "Clouds",
+            "description": "scattered clouds",
+            "icon": "03d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 303.88,
+        "feels_like": 309.47,
+        "temp_min": 303.04,
+        "temp_max": 305.2,
+        "pressure": 1007,
+        "humidity": 68
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.12,
+        "deg": 160
+    },
+    "clouds": {
+        "all": 40
+    },
+    "dt": 1686826076,
+    "sys": {
+        "type": 1,
+        "id": 9479,
+        "country": "SG",
+        "sunrise": 1686783543,
+        "sunset": 1686827458
+    },
+    "timezone": 28800,
+    "id": 1882558,
+    "name": "Thomson Park",
+    "cod": 200
+}

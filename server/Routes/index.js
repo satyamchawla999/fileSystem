@@ -7,14 +7,15 @@ const userController = require("../Controllers/userController")
 
 router.get("/", (req, res) => {
     try {
-        fs.readFile(path.join(__dirname, "../Data", "/user.json"), "utf-8", (err, data) => {
-            return res.status(200).send(data)
-        });
+            return res.status(200).send("Hello")
     }
     catch {
         console.log(err);
     }
 })
+
+router.use('/users',require('./users'));
+router.use('/weather',require('./weather'));
 
 router.post("/checkUser",userController.checkUser);
 router.post("/addUser",userController.addUser);

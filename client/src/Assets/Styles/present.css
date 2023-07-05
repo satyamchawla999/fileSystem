@@ -1,0 +1,42 @@
+.row {
+    padding-top:30px ;
+    margin-bottom: 40px;
+}
+
+.col {
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.input{
+    /* margin-bottom: -100px; */
+    margin-top: 50;
+}
+
+.card {
+    
+    color: white;
+    border: none;
+    font-size: 30px;
+    line-height: 2.5rem;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middle {
+    margin-top: 60px;
+    font-size: 60px;
+    font-weight: 400;
+} 
+
+.last {
+    margin-top: 20px;
+}
